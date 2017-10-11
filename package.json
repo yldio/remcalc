@@ -22,7 +22,8 @@
   "scripts": {
     "lint": "eslint . --fix",
     "fmt": "prettier --write --single-quote src/*.js",
-    "test": "bup && cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text ava",
+    "jest": "bup && cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text ava",
+    "test": "run-s lint jest size",
     "build": "bup",
     "prepublish": "bup",
     "size": "bundlesize"
@@ -58,6 +59,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
+    "npm-run-all": "^4.1.1",
     "nyc": "^11.2.1",
     "prettier": "^1.7.4",
     "tap-xunit": "^1.7.0"
