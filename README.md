@@ -1,5 +1,7 @@
 # remcalc
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/yldio/remcalc.svg)](https://greenkeeper.io/)
+
 [![npm](https://img.shields.io/npm/v/remcalc.svg?style=flat-square)](https://www.npmjs.com/package/remcalc)
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg?style=flat-square)](https://opensource.org/licenses/MPL-2.0)
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
