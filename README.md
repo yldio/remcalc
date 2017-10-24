@@ -12,9 +12,9 @@ Calculate the `rem`'s from `px` values.
 
 ## Table of Contents
 
-- [Install](#install)
-- [Usage](#usage)
-- [License](#license)
+* [Install](#install)
+* [Usage](#usage)
+* [License](#license)
 
 ## Install
 
@@ -28,8 +28,10 @@ yarn add --dev remcalc
 import remcalc from 'remcalc';
 import assert from 'assert';
 
-
-assert.deepEqual(remcalc.withBase(10, 1, 2, 3, 4), '0.1rem 0.2rem 0.3rem 0.4rem');
+assert.deepEqual(
+  remcalc.withBase(10, 1, 2, 3, 4),
+  '0.1rem 0.2rem 0.3rem 0.4rem'
+);
 
 assert.deepEqual(remcalc('1'), '0.0625rem');
 
@@ -59,7 +61,10 @@ assert.deepEqual(
 
 assert.deepEqual(remcalc('1 2 3 4'), '0.0625rem 0.125rem 0.1875rem 0.25rem');
 
-assert.deepEqual(remcalc.withBase(10, '1 2 3 4'), '0.1rem 0.2rem 0.3rem 0.4rem');
+assert.deepEqual(
+  remcalc.withBase(10, '1 2 3 4'),
+  '0.1rem 0.2rem 0.3rem 0.4rem'
+);
 ```
 
 ## License

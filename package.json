@@ -3,25 +3,16 @@
   "version": "1.0.9",
   "license": "MPL-2.0",
   "description": "Calculate the `rem`'s from `px` values",
-  "keywords": [
-    "calc",
-    "rem",
-    "em",
-    "px",
-    "pixels",
-    "pixel"
-  ],
+  "keywords": ["calc", "rem", "em", "px", "pixels", "pixel"],
   "repository": "github:yldio/remcalc",
   "main": "dist/remcalc.umd.js",
   "jsnext:main": "dist/remcalc.es.js",
   "module": "dist/remcalc.es.js",
   "entry": "src/index.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
-    "lint": "eslint . --fix",
-    "fmt": "prettier --write --single-quote src/*.js",
+    "lint": "eslint . --fix --ext .js --ext .md",
+    "fmt": "prettier --write --single-quote *.md src/*.js *.json",
     "jest": "bup && cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text ava",
     "test": "run-s lint jest size",
     "build": "bup",
@@ -47,16 +38,17 @@
     "babel-plugin-transform-es2015-spread": "^6.22.0",
     "babel-plugin-transform-es2015-template-literals": "^6.22.0",
     "babel-register": "^6.26.0",
-    "bup": "^2.0.5",
-    "cross-env": "^5.0.5",
-    "eslint": "^4.8.0",
-    "eslint-config-joyent-portal": "3.1.0",
+    "bup": "^2.0.6",
+    "cross-env": "^5.1.0",
+    "eslint": "^4.9.0",
+    "eslint-config-joyent-portal": "3.2.0",
     "eslint-config-prettier": "^2.6.0",
     "eslint-config-react-app": "^2.0.1",
     "eslint-config-xo-space": "^0.17.0",
     "eslint-plugin-flowtype": "^2.39.1",
-    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-markdown": "^1.0.0-beta.6",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
     "npm-run-all": "^4.1.1",
@@ -78,17 +70,13 @@
     ],
     "env": {
       "test": {
-        "plugins": [
-          "istanbul"
-        ]
+        "plugins": ["istanbul"]
       }
     }
   },
   "ava": {
     "tap": true,
-    "require": [
-      "babel-register"
-    ],
+    "require": ["babel-register"],
     "babel": "inherit"
   }
 }
