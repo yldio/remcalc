@@ -54,7 +54,7 @@
     "npm-run-all": "^4.1.1",
     "nyc": "^11.2.1",
     "prettier": "^1.7.4",
-    "tap-xunit": "^1.7.0"
+    "tap-xunit": "^2.0.0"
   },
   "nyc": {
     "sourceMap": false,
