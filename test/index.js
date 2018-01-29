@@ -1,5 +1,5 @@
 const test = require('ava');
-const remcalc = require('../');
+const { default: remcalc } = require('../');
 
 test('with multiple num arguments', t => {
   t.deepEqual(remcalc(1, 2, 3, 4), '0.0625rem 0.125rem 0.1875rem 0.25rem');
