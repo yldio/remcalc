@@ -34,7 +34,7 @@
     }
   ],
   "dependencies": {
-    "bundlesize": "^0.15.3",
+    "bundlesize": "^0.16.0",
     "lodash.flatten": "^4.4.0"
   },
   "devDependencies": {
