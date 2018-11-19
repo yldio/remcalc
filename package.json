@@ -3,22 +3,13 @@
   "version": "1.0.10",
   "license": "MPL-2.0",
   "description": "Calculate the `rem`'s from `px` values",
-  "keywords": [
-    "calc",
-    "rem",
-    "em",
-    "px",
-    "pixels",
-    "pixel"
-  ],
+  "keywords": ["calc", "rem", "em", "px", "pixels", "pixel"],
   "repository": "github:yldio/remcalc",
   "main": "dist/remcalc.umd.js",
   "jsnext:main": "dist/remcalc.es.js",
   "module": "dist/remcalc.es.js",
   "entry": "src/index.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "lint": "eslint . --fix --ext .js --ext .md",
     "fmt": "prettier --write --single-quote *.md src/*.js *.json",
@@ -30,34 +21,35 @@
   "bundlesize": [
     {
       "path": "./src/index.js",
-      "maxSize": "220 B"
+      "maxSize": "350 B"
     }
   ],
   "dependencies": {
-    "bundlesize": "^0.16.0",
+    "bundlesize": "^0.17.0",
     "lodash.flatten": "^4.4.0"
   },
   "devDependencies": {
     "ava": "^0.25.0",
-    "babel-eslint": "^8.2.1",
-    "babel-preset-joyent-portal": "^6.0.3",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-joyent-portal": "^7.0.1",
     "babel-register": "^6.26.0",
     "bup": "^4.1.6",
-    "cross-env": "^5.1.3",
-    "eslint": "^4.16.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.9.0",
     "eslint-config-joyent-portal": "3.3.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-config-react-app": "^2.1.0",
-    "eslint-config-xo-space": "^0.18.0",
-    "eslint-plugin-flowtype": "^2.42.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-react-app": "^3.0.5",
+    "eslint-config-xo-space": "^0.20.0",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-markdown": "^1.0.0-beta.6",
-    "eslint-plugin-prettier": "^2.5.0",
-    "eslint-plugin-react": "^7.6.1",
-    "npm-run-all": "^4.1.2",
-    "nyc": "^11.4.1",
-    "prettier": "^1.10.2"
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "graphql": "^14.0.2",
+    "npm-run-all": "^4.1.3",
+    "nyc": "^13.1.0",
+    "prettier": "^1.15.2"
   },
   "nyc": {
     "sourceMap": false,
